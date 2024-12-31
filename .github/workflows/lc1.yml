@@ -5,9 +5,9 @@ permissions:
   pull-requests: write
 
 env:
-  LW_ACCOUNT_NAME: ${{ secrets._LW_ACCOUNT_NAME }}
-  LW_API_KEY: ${{ secrets.LW_API_KEY }}
-  LW_API_SECRET: ${{ secrets.LW_API_SECRET }}
+  LW_ACCOUNT_NAME: codesecqa
+  LW_API_KEY: CODESECQ_2DAEF520261DE8A2C14391DD1E0EB1A31AD4E621894EBD2
+  LW_API_SECRET: _05cad294979abc0aa587305de0b856be
 
 name: Lacework Code Security (PR)
 jobs:
