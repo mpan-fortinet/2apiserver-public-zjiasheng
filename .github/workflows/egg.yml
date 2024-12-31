@@ -1,23 +1,29 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions í ½íº€
+run-name: ${{ github.actor }} is testing out GitHub Actions ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "í ¼í¾‰ The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "í ½í°§ This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "í ½í´ The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - run: echo "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+
+      
       - run: pwd
       - run: ls
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: echo "í ½í²¡ The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "í ½í¶¥ï¸ The workflow is now ready to test your code on the runner."
+      - run: echo "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¸ The workflow is now ready to test your code on the runner."
       - run: pwd
       - run: ls
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "í ¼í½ This job's status is ${{ job.status }}."
+      - name: List github token
+        run: |
+          echo ${{ secrets.GITHUB_TOKEN }}
+          
+      - run: echo "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ This job's status is ${{ job.status }}."
 
