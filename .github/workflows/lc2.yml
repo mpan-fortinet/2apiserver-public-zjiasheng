@@ -10,7 +10,7 @@ env:
   LW_API_SECRET: ${{ secrets.LW_API_SECRET }}
 
 
-name: Lacework Code Security (PR)
+name: Lacework Code Security Env
 jobs:
   run-analysis:
     runs-on: ubuntu-20.04
