@@ -61,8 +61,8 @@ jobs:
              echo "EXIT_FLAG=critical=1" >> env.list
              
              # This line starts our docker container which will perform the scan, we are mounting pwd to /app/src in the container, pwd resolves to the root of the repo you are scanning. 
-
-             docker run --env-file env.list -v "$(pwd):/app/src" lacework/codesec-iac:stable
+             # -u $(id -u):$(id -g) -v $(pwd):/workspace -w /workspace
+             docker run -u $(id -u):$(id -g) --env-file env.list -v "$(pwd):/app/src"  -w /app/src lacework/codesec-iac:stable
 
         env:
 
