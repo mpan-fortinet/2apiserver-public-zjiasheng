@@ -62,7 +62,7 @@ jobs:
              
              # This line starts our docker container which will perform the scan, we are mounting pwd to /app/src in the container, pwd resolves to the root of the repo you are scanning. 
              # -u $(id -u):$(id -g) -v $(pwd):/workspace -w /workspace
-             docker run -u $(id -u):$(id -g) --env-file env.list -v "$(pwd):/app/src"  -w /app/src lacework/codesec-iac:stable
+             docker run --env-file env.list -v "$(pwd):/app/src"  -w /app/src lacework/codesec-iac:stable
 
         env:
 
