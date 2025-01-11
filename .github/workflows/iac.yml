@@ -41,7 +41,9 @@ jobs:
         run: env | grep "GITHUB_"
 
       - name: Set permissions
-        run: chmod -R u+w /app/src/terraform
+        run: 
+          ls -lha
+          chmod -R u+w ./terraform
       - name: Scan the repo for vulnerabilities in IaC
 
         run: |
