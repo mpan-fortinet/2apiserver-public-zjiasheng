@@ -2,6 +2,7 @@ default:
   sca:
     scan:
       enableSecrets: true
+      enableLicenses: true
       licenseCategoriesNotAllowed: [ forbidden, restricted ]
       customSecrets:
         - id: rule1
