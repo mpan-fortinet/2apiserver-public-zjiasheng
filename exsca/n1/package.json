@@ -1,0 +1,17 @@
+{
+  "name": "apiserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jiasheng",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3"
+  }
+}
