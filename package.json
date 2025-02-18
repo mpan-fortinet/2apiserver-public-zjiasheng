@@ -9,9 +9,11 @@
   "author": "jiasheng",
   "license": "ISC",
   "dependencies": {
-  
-    "sequelize": "^6.28.0",
+    
+    "sequelize": "^6.28.0"
+
   },
   "devDependencies": {
+ 
   }
 }
