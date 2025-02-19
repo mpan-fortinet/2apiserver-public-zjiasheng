@@ -9,7 +9,7 @@
   "author": "jiasheng",
   "license": "ISC",
   "dependencies": {
-    "cookie-parser": "^1.4.6"
+    "cookie": "^0.5.0"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.3"
